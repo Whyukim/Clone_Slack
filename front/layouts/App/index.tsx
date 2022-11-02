@@ -8,7 +8,7 @@ const Login = loadable(() => import('@pages/Login'), {
 const Signup = loadable(() => import('@pages/Signup'), {
   fallback: <div className="loading">로딩중</div>,
 });
-const Channel = loadable(() => import('@pages/Channel'), {
+const Workspace = loadable(() => import('@layouts/Workspace'), {
   fallback: <div className="loading">로딩중</div>,
 });
 
@@ -18,7 +18,7 @@ const App = () => {
       <Route path="/" element={<Login />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-      <Route path="/workspace/channel" element={<Channel />} />
+      <Route path="/workspace/*" element={<Workspace />} />
     </Routes>
   );
 };

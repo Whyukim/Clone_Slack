@@ -1,11 +1,12 @@
 import Workspace from '@layouts/Workspace';
 import React from 'react';
+import { Container, Header } from './styles';
 
 const Channel = () => {
   return (
-    <Workspace>
-      <div>로그인 ㅊㅋ</div>
-    </Workspace>
+    <Container>
+      <Header>로그인 ㅊㅋ</Header>
+    </Container>
   );
 };
 
